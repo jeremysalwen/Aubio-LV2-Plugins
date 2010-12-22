@@ -71,7 +71,7 @@ am__installdirs = "$(DESTDIR)$(libdir)" "$(DESTDIR)$(includedir)"
 LTLIBRARIES = $(lib_LTLIBRARIES)
 am__DEPENDENCIES_1 =
 libaubiolv2_la_DEPENDENCIES = $(am__DEPENDENCIES_1)
-am_libaubiolv2_la_OBJECTS = lib.lo tss-plugin.lo
+am_libaubiolv2_la_OBJECTS = lib.lo tss-plugin.lo onset-plugin.lo
 libaubiolv2_la_OBJECTS = $(am_libaubiolv2_la_OBJECTS)
 AM_V_lt = $(am__v_lt_$(V))
 am__v_lt_ = $(am__v_lt_$(AM_DEFAULT_VERBOSITY))
@@ -245,7 +245,10 @@ libaubiolv2_la_SOURCES = \
 	lib.c           \
 	tss-plugin.c           \
 	tss-plugin.h           \
-	aubiolv2.h
+	aubiolv2.h           \
+	onset-plugin.c           \
+	onset-plugin.h           \
+	onset.ttl
 
 libaubiolv2_la_LDFLAGS = 
 libaubiolv2_la_LIBADD = $(AUBIOLV2_LIBS)
@@ -325,6 +328,7 @@ distclean-compile:
 	-rm -f *.tab.c
 
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/lib.Plo@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/onset-plugin.Plo@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/tss-plugin.Plo@am__quote@
 
 .c.o:

@@ -18,7 +18,10 @@ libaubiolv2_la_SOURCES = \
 	lib.c           \
 	tss-plugin.c           \
 	tss-plugin.h           \
-	aubiolv2.h
+	aubiolv2.h           \
+	onset-plugin.c           \
+	onset-plugin.h           \
+	onset.ttl
 
 libaubiolv2_la_LDFLAGS = 
 

@@ -2,12 +2,12 @@
 /*
  * lib.c
  * Copyright (C) Jeremy  Salwen 2010 <jas2312@columbia.edu>
- * 
+	 * 
  * aubiolv2 is free software: you can redistribute it and/or modify it
  * under the terms of the GNU General Public License as published by the
  * Free Software Foundation, either version 3 of the License, or
  * (at your option) any later version.
- * 
+	 * 
  * aubiolv2 is distributed in the hope that it will be useful, but
  * WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
@@ -19,6 +19,7 @@
 
 #include <stdio.h>
 #include "tss-plugin.h"
+#include "onset-plugin.h"
 #include <lv2.h>
 
 
@@ -27,9 +28,11 @@ const LV2_Descriptor *lv2_descriptor(uint32_t index)
 {
 
 	switch (index) {
-	case 0:
-		return get_tss_descriptor ();
-	default:
-		return NULL;
+		case 0:
+			return get_tss_descriptor ();
+		case 1:
+			return get_onset_descriptor();
+		default:
+			return NULL;
 	}
 }
