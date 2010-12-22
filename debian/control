@@ -13,6 +13,6 @@ Section: sound
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: A set of LV2 plugins wrapping Aubio
- This is a set of LV2 plugins which wraps the Aubio sound analysis library.
-Currently it contains two plugins, a Transient/Steady State Separator, and
-an Onset Detector.
+ This is a set of LV2 plugins which wraps the Aubio sound analysis library. 
+ Currently it contains two plugins, a Transient/Steady State Separator, and
+ an Onset Detector.
