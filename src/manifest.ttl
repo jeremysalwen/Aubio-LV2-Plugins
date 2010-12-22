@@ -3,4 +3,5 @@
 
 <urn:aubio:plugins:tss> a lv2:Plugin;
   lv2:binary   <libaubiolv2.so> ;
-  rdfs:seeAlso <tss.ttl> .
+  rdfs:seeAlso <tss.ttl> ;
+  rdfs:seeAlso <onset.ttl> .
