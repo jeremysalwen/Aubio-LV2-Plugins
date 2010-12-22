@@ -1,0 +1,21 @@
+The package provides LV2 plugin wrappers for the following Aubio functions:
+
+ * Transient/Steady State Separation
+
+This package requires Aubio to be installed in your system in order to compile.
+
+To compile, run 
+
+$./configure
+$make
+
+To install, run 
+
+$make install
+
+Although I would suggest using a program such as checkinstall to wrap the 
+installation in a platform specific package, if possible.
+
+This package will install the plugins into /usr/lib/lv2 by default.
+
+To install to another directory, use the option --with-lv2-dir=DIR
