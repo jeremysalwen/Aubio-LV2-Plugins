@@ -1,0 +1,5 @@
+aubio-lv2 (0.1-1) unstable; urgency=low
+
+  * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
+
+ -- Jeremy Salwen <jeremybubs@gmail.com>  Tue, 21 Dec 2010 23:32:33 -0500

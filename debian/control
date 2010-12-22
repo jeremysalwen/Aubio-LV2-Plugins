@@ -1,0 +1,23 @@
+Source: aubio-lv2
+Priority: extra
+Maintainer: Jeremy Salwen <jeremybubs@gmail.com>
+Build-Depends: debhelper (>= 7.0.50~), autotools-dev
+Standards-Version: 3.8.4
+Section: libs
+Homepage: <insert the upstream URL, if relevant>
+#Vcs-Git: git://git.debian.org/collab-maint/aubio-lv2.git
+#Vcs-Browser: http://git.debian.org/?p=collab-maint/aubio-lv2.git;a=summary
+
+Package: aubio-lv2-dev
+Section: libdevel
+Architecture: any
+Depends: aubio-lv2BROKEN (= ${binary:Version})
+Description: <insert up to 60 chars description>
+ <insert long description, indented with spaces>
+
+Package: aubio-lv2BROKEN
+Section: libs
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: <insert up to 60 chars description>
+ <insert long description, indented with spaces>
