@@ -1,6 +1,7 @@
 The package provides LV2 plugin wrappers for the following Aubio functions:
 
  * Transient/Steady State Separation
+ * Onset Detection
 
 This package requires Aubio to be installed in your system in order to compile.
 
