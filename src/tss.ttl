@@ -3,6 +3,7 @@
 @prefix doap: <http://usefulinc.com/ns/doap#> .
 
 <urn:aubio:plugins:tss> a lv2:Plugin ;
+    a lv2:AnalyserPlugin ;
     doap:name "Transient Steady State Separator" ;
     doap:licence <http://usefulinc.com/doap/licenses/gpl> ;
 

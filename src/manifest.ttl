@@ -1,7 +1,9 @@
 @prefix lv2:  <http://lv2plug.in/ns/lv2core#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
+<urn:aubio:plugins:onset> a lv2:Plugin;
+  lv2:binary   <libaubiolv2.so> ;
+  rdfs:seeAlso <onset.ttl> .
 <urn:aubio:plugins:tss> a lv2:Plugin;
   lv2:binary   <libaubiolv2.so> ;
-  rdfs:seeAlso <tss.ttl> ;
-  rdfs:seeAlso <onset.ttl> .
+  rdfs:seeAlso <tss.ttl> .
