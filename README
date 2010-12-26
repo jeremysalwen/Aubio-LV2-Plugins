@@ -14,8 +14,7 @@ To install, run
 
 $make install
 
-Although I would suggest using a program such as checkinstall to wrap the 
-installation in a platform specific package, if possible.
+I also provide Debian packaging.  To build the .deb package, run dpkg-buildpackage or git-buildpackage while in the base directory.
 
 This package will install the plugins into /usr/lib/lv2 by default.
 
