@@ -7,7 +7,7 @@
 <urn:aubio:plugins:onset> a lv2:Plugin ;
     a lv2:AnalyserPlugin;
     doap:name "Onset Detector" ;
-    doap:licence <http://usefulinc.com/doap/licenses/gpl> ;
+    doap:license <http://usefulinc.com/doap/licenses/gpl> ;
 
     lv2:port [
     a lv2:AudioPort ;
