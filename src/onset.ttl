@@ -2,10 +2,12 @@
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix doap: <http://usefulinc.com/ns/doap#> .
 @prefix extport: <http://lv2plug.in/ns/dev/extportinfo#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
 <urn:aubio:plugins:onset> a lv2:Plugin ;
     a lv2:AnalyserPlugin;
     doap:name "Onset Detector" ;
-    doap:licence <http://usefulinc.com/doap/licenses/gpl> ;
+    doap:license <http://usefulinc.com/doap/licenses/gpl> ;
 
     lv2:port [
     a lv2:AudioPort ;
