@@ -20,6 +20,8 @@
 #include <stdio.h>
 #include "tss-plugin.h"
 #include "onset-plugin.h"
+#include "pitch-plugin.h"
+
 #include <lv2.h>
 
 
@@ -32,6 +34,8 @@ const LV2_Descriptor *lv2_descriptor(uint32_t index)
 			return get_tss_descriptor ();
 		case 1:
 			return get_onset_descriptor();
+		case 2:
+			return get_pitch_descriptor();
 		default:
 			return NULL;
 	}
